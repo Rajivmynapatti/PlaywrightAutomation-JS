@@ -32,7 +32,7 @@ test.skip("E2E test", async ({ page }) => {
     //the below code tell playwright to wait for the list of elements to be visible for that we are using waitfor();
     await page.locator('div li').first().waitFor();
 
-    const bool = await page.locator("//h3[text()='"+productName+"']").isVisible();
+    const bool = await page.locator("//h3[text()='" + productName + "']").isVisible();
     expect(bool).toBeTruthy();
 
     await page.locator("text = Checkout").click();
@@ -79,7 +79,7 @@ test.skip("E2E test", async ({ page }) => {
 
     //Automating Order details page
     const asserttext = await page.locator("h1.hero-primary");
-   await  expect(asserttext).toHaveText(" Thankyou for the order. ");
+    await expect(asserttext).toHaveText(" Thankyou for the order. ");
 
     //To grab the order ID
     const orderID = await page.locator("td.em-spacer-1 label").last().textContent();
@@ -96,7 +96,7 @@ test.skip("E2E test", async ({ page }) => {
     //Scan through the rows of the orders table and get the count
     const rowOrderData = await page.locator("tbody tr");
     const rowcount = await rowOrderData.count();
-    console.log("Total number of products in the order tables are "+ rowcount);
+    console.log("Total number of products in the order tables are " + rowcount);
 
     //Using for loop, we will traves through the rows and will first fetch the orderID and if found then will click on the same rows-> View button
     for (let i = 0; i < rowcount; ++i) {
