@@ -20,7 +20,7 @@ AfterStep(async function ({ result }) {
     // This hook will be executed after every steps, and take a screenshot on step failure
     if (result.status === Status.FAILED) {
 
-       await this.page.screenshot({ path: "cucumber.png" });
+        await this.page.screenshot({ path: "cucumber.png" });
         //expect(await this.page.screenshot()).toMatchSnapshot("CucumberError.png");
     }
 
