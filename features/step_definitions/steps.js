@@ -129,6 +129,6 @@ Then('user will get the message', async function () {
   userMessage = this.page.locator('#flash');
   await userMessage.waitFor();
   const text = await userMessage.textContent();
-  //console.log(text);
+  console.log(text);
   await expect(userMessage).toContainText("secure");
 });
