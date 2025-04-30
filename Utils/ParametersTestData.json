@@ -1,0 +1,26 @@
+[
+    {
+        "url": "https://rahulshettyacademy.com/client",
+        "email": "rajiv2@grr.la",
+        "password": "Test@1234",
+        "productName": "IPHONE 13 PRO",
+        "CVV": "123",
+        "Month": "03",
+        "Year": "25",
+        "NameOnCard": "R Rajiv Kumar",
+        "CouponCode": "rahulshettyacademy",
+        "CountryName": " Indonesia"
+    },
+    {
+        "url": "https://rahulshettyacademy.com/client",
+        "email": "rajiv3@grr.la",
+        "password": "Test@1234",
+        "productName": "ZARA COAT 3",
+        "CVV": "456",
+        "Month": "12",
+        "Year": "27",
+        "NameOnCard": "T Hari Priya",
+        "CouponCode": "rahulshettyacademy",
+        "CountryName": " India"
+    }
+]

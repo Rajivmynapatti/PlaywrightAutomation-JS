@@ -1,0 +1,6 @@
+[ 'ZARA COAT 3', 'ADIDAS ORIGINAL', 'IPHONE 13 PRO' ]
+The total count of the products are 3
+* Coupon Applied
+The orderID is  | 68072435fc76541aad39eab6 | 
+Total number of products in the order tables are 7
+View button clicked

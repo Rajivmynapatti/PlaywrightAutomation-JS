@@ -1,0 +1,5 @@
+User Logged In successfully
+Let's Shop
+[ 'ZARA COAT 3', 'ADIDAS ORIGINAL', 'IPHONE 13 PRO' ]
+ZARA COAT 3
+User Logged Out successfully
