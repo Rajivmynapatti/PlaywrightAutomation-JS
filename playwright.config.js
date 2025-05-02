@@ -22,7 +22,7 @@ module.exports = defineConfig({
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
     browserName: 'chromium', // chromium for chrome, webkit for safari, firefox for firefox browser
-    headless: false, //If false then open the browser and user can see the browser opening. If true then user will not able to see the browser.
+    headless: true, //If false then open the browser and user can see the browser opening. If true then user will not able to see the browser.
     screenshot: 'on', //To get the screenshots of each and every steps in code performed by the playwright
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
