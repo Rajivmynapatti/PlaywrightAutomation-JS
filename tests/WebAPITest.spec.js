@@ -46,7 +46,7 @@ test("Login with API and Perform Web Testing", async ({ page }) => {
         }
 
     }
-    await page.pause();
+   // await page.pause();
 
 
 })

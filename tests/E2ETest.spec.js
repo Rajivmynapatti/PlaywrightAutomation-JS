@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const exp = require('constants');
 
-test.skip("E2E test", async ({ page }) => {
+test("E2E test", async ({ page }) => {
     const productName = "IPHONE 13 PRO";
     const allProducts = page.locator("div.card-body");
 
@@ -109,7 +109,7 @@ test.skip("E2E test", async ({ page }) => {
         }
 
     }
-    await page.pause();
+   // await page.pause();
 
     //Fetching the order ID from the order details page when user click on View button and then adding assestions.
     const orderDetailsID = await page.locator("div.col-text").textContent();

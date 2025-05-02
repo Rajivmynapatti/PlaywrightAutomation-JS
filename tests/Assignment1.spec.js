@@ -5,7 +5,7 @@ test("Registeration of the user", async ({ page }) => {
     await page.locator('.text-reset').click();
     await page.locator('#firstName').fill("Rajiv");
     await page.locator('#lastName').fill("Kumar");
-    await page.locator('#userEmail').fill("rajiv14@grr.la");
+    await page.locator('#userEmail').fill("rajiv101@grr.la");
     await page.locator('#userMobile').fill("1234567890");
     await page.locator("[formcontrolname='occupation']").selectOption("3: Engineer");
     await page.locator("[value='Male']").check();

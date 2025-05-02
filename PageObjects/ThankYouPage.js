@@ -23,6 +23,9 @@ class ThankYouPage{
     }
 
     async grabOrderID(){
+
+        await this.page.waitForLoadState('networkidle');
+
         orderID = await this.grabOrder.last().textContent();
         console.log("The orderID is " + orderID);
         return orderID;
@@ -43,6 +46,7 @@ class ThankYouPage{
     for (let i = 0; i < await this.rows.count(); ++i) {
 
         const rowOrderID = await this.rows.nth(i).locator("th").textContent();
+
         if (orderID.includes(rowOrderID)) {
             await this.rows.nth(i).locator("button").first().click();
             console.log("View button clicked");

@@ -2,7 +2,9 @@
 class FlipkarProductDetailsPage {
 
 
-    constructor(page) {
+    constructor(page
+        
+    ) {
 
         this.page = page;
         this.addToCartButton = page.locator("li button.QqFHMw");

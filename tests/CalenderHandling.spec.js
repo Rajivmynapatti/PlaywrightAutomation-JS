@@ -20,7 +20,7 @@ test('Calender handling', async ({ page }) => {
 
     await page.locator("//abbr[text()='" + date + "']").click();
 
-    await page.pause();
+    //await page.pause();
 
 }
 );

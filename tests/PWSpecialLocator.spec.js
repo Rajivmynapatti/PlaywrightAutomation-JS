@@ -45,7 +45,7 @@ await page.locator("app-card.col-lg-3").filter({hasText: "Samsung Note 8"}).getB
 await checkOut.click();
 
 
-await page.pause();
+//await page.pause();
 
 
 

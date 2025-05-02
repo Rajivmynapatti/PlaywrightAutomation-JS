@@ -42,6 +42,7 @@ test(`Product purchase of ${data.productName}`, async ({ page }) => {
     const thankyou = pageObjectManager.getthankyouPage();
 
     await thankyou.assertThankYouPageMessage();
+    await thankyou.grabOrderID();
 
     await thankyou.matchOrderIDAndClickView();
 
