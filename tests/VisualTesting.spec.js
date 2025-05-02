@@ -16,7 +16,7 @@ test("Visual Testing", async ({ page }) => {
 
     await page.screenshot({ path: 'pageScreenshot.png' });
 
-    expect(await page.screenshot()).toMatchSnapshot("Error.png");
+    expect(await page.screenshot()).toMatchSnapshot("success.png");
 
 
 })
