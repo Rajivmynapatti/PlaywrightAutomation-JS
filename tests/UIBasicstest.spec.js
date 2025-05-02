@@ -21,7 +21,7 @@ test('First Playwright test', async ({ browser, page }) => {
     
     await expect(page).toHaveTitle("The Internet");
 
-    await loginPage.validlogin(username, password);
+    await loginPage.UIvalidlogin(username, password);
 
     // const errormsg = await page.locator('.flash.error').textContent();
     // console.log(errormsg);

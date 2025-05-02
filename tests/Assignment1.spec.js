@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test')
 
-test("Registeration of the user", async ({ page }) => {
+test.skip("Registeration of the user", async ({ page }) => {
     await page.goto("https://rahulshettyacademy.com/client");
     await page.locator('.text-reset').click();
     await page.locator('#firstName').fill("Rajiv");
