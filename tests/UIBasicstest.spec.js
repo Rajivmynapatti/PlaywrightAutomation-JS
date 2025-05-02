@@ -32,7 +32,7 @@ test('First Playwright test', async ({ browser, page }) => {
     console.log (text);
     await expect(userMessage).toContainText("Secure");
 
-    loginPage.logout();
+    await loginPage.logout();
 
 
 
