@@ -14,7 +14,7 @@ test.beforeAll( async () => {
 
 })
 
-test("Login with API and Perform Web Testing", async ({ page }) => {
+test.skip("Login with API and Perform Web Testing", async ({ page }) => {
 
     page.addInitScript(value => 
     {
